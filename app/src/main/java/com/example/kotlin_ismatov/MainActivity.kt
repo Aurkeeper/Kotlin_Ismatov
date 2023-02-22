@@ -11,8 +11,9 @@ import java.io.StringBufferInputStream
 
 class MainActivity : AppCompatActivity() {
     //Объявление перемен
-    private var text: String =  "В магазине осталось <10 банок колы>, может больше" //Строка, у каждого элемента есть свой номер который начинается с 0
-    private var text2: String =  "В магазине осталось 10 банок колы, <может больше>"
+    private var text: String =
+        "В магазине осталось <10 банок колы>, может больше" //Строка, у каждого элемента есть свой номер который начинается с 0
+    private var text2: String = "В магазине осталось 10 банок колы, <может больше>"
     private var tvText: TextView? = null; //переменная для text view
     private var tvText2: TextView? = null;
 
@@ -28,9 +29,10 @@ class MainActivity : AppCompatActivity() {
         var subText3: String = text2.substringAfter('<')
         var subText4: String = subText3.substringBefore('>')
         tvText2?.setText(subText4)
-    
 
 
+//Домашенко и Пермяков
 
 
+    }
 }
